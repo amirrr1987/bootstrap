@@ -1,0 +1,5 @@
+@use '../custom' as *;
+
+.btn-rounded{
+    @extend .px-3 , .py-2, .position-relative, .border, .border-white;
+}

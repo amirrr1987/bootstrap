@@ -1,6 +1,7 @@
 import Card from "./components/Card"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";
+import Services from "./components/Services";
 const App = () => {
 
   return (
@@ -15,22 +16,7 @@ const App = () => {
         </div>
       </header>
       <main>
-        <section>
-          <div className="container">
-            <div className="row">
-              <div className="col-12 col-md-6 col-lg-4">
-                <Card />
-              </div>
-              <div className="col-12 col-md-6 col-lg-4">
-                <Card />
-              </div>
-              <div className="col-12 col-md-6 col-lg-4">
-                <Card />
-              </div>
-
-            </div>
-          </div>
-        </section>
+        <Services />
       </main>
       <Footer />
     </>

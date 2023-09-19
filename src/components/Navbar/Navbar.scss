@@ -1,0 +1,17 @@
+@use '../../assets/style/custom' as *;
+@use '../../assets/style/components/mixins' as *;
+@use '../../assets/style/components/buttons' as *;
+.menu{
+    @include gradiant;
+    li{
+        @extend .px-2;
+        
+        a{
+            font-weight: 600;
+            @extend .text-white, .text-capitalize;
+        }
+    }
+    .btn-amir{
+        @extend .btn-rounded;
+    }
+}
