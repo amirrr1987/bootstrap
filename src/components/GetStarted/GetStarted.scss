@@ -1,0 +1,20 @@
+@use '../../assets/style/custom' as * ;
+.get-started{
+    background-color: $gray-200;
+    @extend .py-5;
+    &__container{
+        @extend .container;
+    }
+    &__title{
+        @extend .text-center,.display-3, .fw-bold, .text-capitalize;
+    }
+    &__started__subtitle{
+        @extend .text-center, .lead;
+    }
+    &__row{
+        @extend .row;
+    }
+    &__guarantee{
+        
+    }
+}

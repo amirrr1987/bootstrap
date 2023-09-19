@@ -2,6 +2,8 @@ import Card from "./components/Card"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer";
 import Services from "./components/Services";
+import Faq from "./components/Faq";
+import GetStarted from "./components/GetStarted";
 const App = () => {
 
   return (
@@ -17,6 +19,8 @@ const App = () => {
       </header>
       <main>
         <Services />
+        <Faq />
+        <GetStarted />
       </main>
       <Footer />
     </>
