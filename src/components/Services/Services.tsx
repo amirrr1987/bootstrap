@@ -1,10 +1,33 @@
+import  "./Services.scss";
 import { Icon } from "@iconify/react";
-import service1 from '@/assets/images/services/service-1.png'
-import service2 from '@/assets/images/services/service-2.png'
-import service3 from '@/assets/images/services/service-3.png'
+import service1 from "@/assets/images/services/service-1.png";
+import service2 from "@/assets/images/services/service-2.png";
+import service3 from "@/assets/images/services/service-3.png";
 const Services = () => {
   return (
-    <section id="services">
+    <section className="services" id="services">
+      <div className="py-5">
+        <div className="container">
+          <div className="row">
+            <div className="co">
+              <h3 className="text-center">Our Services</h3>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col">
+              Our Services Range From Initial Design To Deployment Anywhere
+              Anytime
+            </div>
+            <div className="col">
+              
+            Lorem ipsum dolor sit amet consectetur architecto magni, 
+            dicta maxime laborum temporibus dolorem esse doloremque illo quas nisi enim molestias. 
+            Tempore ducimus molestiae in dolore enim.
+          
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="py-3">
         <div className="container">
           <div className="row justify-content-between align-items-center">

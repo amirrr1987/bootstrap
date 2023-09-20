@@ -1,20 +1,57 @@
-@use '../../assets/style/custom' as * ;
-.get-started{
-    background-color: $gray-200;
-    @extend .py-5;
-    &__container{
-        @extend .container;
+@use "../../assets/style/custom" as *;
+@use "../../assets/style/components/mixins" as *;
+.started {
+  background-color: $gray-200;
+  @extend .py-5;
+  &__container {
+    @extend .container;
+  }
+  &__title {
+    @extend  .display-3, .fw-bold, .text-capitalize;
+  }
+  &__subtitle {
+    @extend .lh-lg;
+  }
+  &__divider{
+    width: 100px;
+    height: 3px;
+    @extend .mx-auto, .bg-primary;
+  }
+  &__row {
+    @extend .row;
+  }
+  &__col {
+    @extend .col;
+  }
+  &__box {
+    @extend .rounded, .shadow, .d-flex, .overflow-hidden;
+  }
+  &__content {
+    @extend .p-5, .flex-fill, .w-50, .p-5, .text-white;
+    @include gradient;
+
+  }
+
+  &__form {
+    @extend .p-5, .flex-fill, .w-50, .bg-white;
+  }
+  &__form-legend{
+    @extend .display-5, .mb-5, .fw-bold;
+    @include gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &__form-email {
+    @extend .form-control, .shadow-sm, .mb-3;
+  }
+  &__form-message {
+    @extend .form-control, .shadow-sm, .mb-5;
+  }
+  &__form-btn {
+    @extend .btn, .btn-primary, .rounded-pill, .w-100, .btn-lg, .py-3;
+    & > span{
+        @extend .mx-3;
     }
-    &__title{
-        @extend .text-center,.display-3, .fw-bold, .text-capitalize;
-    }
-    &__started__subtitle{
-        @extend .text-center, .lead;
-    }
-    &__row{
-        @extend .row;
-    }
-    &__guarantee{
-        
-    }
+  }
 }
