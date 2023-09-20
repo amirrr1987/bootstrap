@@ -1,5 +1,29 @@
+@use '@/assets/style/custom' as *;
 .companies{
-    img{
+    @extend .py-5;
+    &__container{
+        @extend .container;
+    }
+    &__divider{
+        @extend .mb-5, .mt-4;
+        margin-inline: auto;
+        width: 100px;
+        height: 3px;
+    }
+    &__row{
+        @extend .row;
+    }
+    &__title{
+        @extend .text-center, .display-6, .fw-bold;
+    }
+    &__col{
+        @extend .col;
+    }
+    &__box{
+        @extend .shadow-sm, .p-3, .rounded;
+    }
+    &__image{
+        @extend .w-100;
         object-fit: scale-down;
         height: 2rem;
     }

@@ -2,17 +2,37 @@
 @use '@/assets/style/components/mixins' as *;
 @use '@/assets/style/components/buttons' as *;
 .menu{
-    @include gradiant;
-    @extend .navbar, .navbar-expand-lg;
-    li{
-        @extend .px-2;
-        
-        a{
-            font-weight: 600;
-            @extend .text-white, .text-capitalize;
-        }
+    @include gradient;
+    @extend .navbar, .navbar-expand-lg, .shadow;
+    &__container{
+        @extend .container;
     }
-    .btn-amir{
-        @extend .btn-rounded;
+    &__brand{
+        @extend .navbar-brand;
+    }
+    &__log{
+        @extend .rounded;
+    }
+    &__toggler{
+        @extend .navbar-toggler;
+    }
+    &__toggler-icon{
+        @extend .navbar-toggler-icon;
+    }
+    &__nav{
+        @extend .navbar-nav;
+    }
+    &__item{
+        @extend .nav-item, .px-2;
+    }
+    &__link{
+        @extend .nav-link, .text-white, .text-capitalize;
+        font-weight: 600;
+    }
+    &__collapse{
+        @extend .collapse, .navbar-collapse, .justify-content-end;
+    }
+    &__btn{
+        @extend .rounded-pill, .d-flex, .align-items-center, .gap-2, .btn-rounded;
     }
 }

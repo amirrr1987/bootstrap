@@ -1,3 +1,26 @@
+@use '@/assets/style/custom' as *;
+@use '@/assets/style/components/mixins' as *;
 .testimonials{
-    background-color: red;
+    @include gradient;
+    // background-image: url('../../assets/images/testimonials/bg-top.svg');
+    @extend .py-5;
+    &__container{
+        @extend .container;
+    }
+    &__row{
+        @extend .row;
+    }
+    &__title{
+        @extend .text-center, .display-3, .fw-bold, .text-capitalize;
+
+    }
+    &__divider{
+        width: 100px;
+        height: 3px;
+        margin-inline: auto;
+    }
+    &__caption{
+        @extend .text-center, .lead, .pt-1;
+
+    }
 }

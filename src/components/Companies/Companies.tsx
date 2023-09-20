@@ -7,42 +7,43 @@ import company5 from "../../assets/images/companies/company-5.png";
 import company6 from "../../assets/images/companies/company-6.png";
 const Companies = () => {
   return (
-    <section className="py-12 companies">
-      <div className="container">
-        <div className="row">
-            <div className="col">
-                <h3 className="text-center mb-5">Trusted by companies like</h3>
+    <section className="companies">
+      <div className="companies__container">
+        <div className="companies__row">
+            <div className="companies__col">
+                <h3 className="companies__title">Trusted by companies like</h3>
+                <hr className="companies__divider" />
             </div>
         </div>
-        <div className="row">
-          <div className="col">
-            <div className="shadow-sm p-3 rounded">
-              <img className="w-100" src={company1} title="" alt="" />
+        <div className="companies__row">
+          <div className="companies__col">
+            <div className="companies__box">
+              <img className="companies__image" src={company1} title="" alt="" />
             </div>
           </div>
-          <div className="col">
-            <div className="shadow-sm p-3 rounded">
-              <img className="w-100" src={company2} title="" alt="" />
+          <div className="companies__col">
+            <div className="companies__box">
+              <img className="companies__image" src={company2} title="" alt="" />
             </div>
           </div>
-          <div className="col">
-            <div className="shadow-sm p-3 rounded">
-              <img className="w-100" src={company3} title="" alt="" />
+          <div className="companies__col">
+            <div className="companies__box">
+              <img className="companies__image" src={company3} title="" alt="" />
             </div>
           </div>
-          <div className="col">
-            <div className="shadow-sm p-3 rounded">
-            <img className="w-100" src={company4} title="" alt="" />
+          <div className="companies__col">
+            <div className="companies__box">
+            <img className="companies__image" src={company4} title="" alt="" />
             </div>
           </div>
-          <div className="col">
-            <div className="shadow-sm p-3 rounded">
-            <img className="w-100" src={company5} title="" alt="" />
+          <div className="companies__col">
+            <div className="companies__box">
+            <img className="companies__image" src={company5} title="" alt="" />
             </div>
           </div>
-          <div className="col">
-            <div className="shadow-sm p-3 rounded">
-            <img className="w-100" src={company6} title="" alt="" />
+          <div className="companies__col">
+            <div className="companies__box">
+            <img className="companies__image" src={company6} title="" alt="" />
             </div>
           </div>
         </div>

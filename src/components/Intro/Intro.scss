@@ -1,8 +1,36 @@
-@use '@/assets/style/custom' as * ;
+@use '@/assets/style/custom' as *;
+@use '@/assets/style/components/mixins' as *;
+@use '@/assets/style/components/buttons' as *;
 .intro{
     @extend .py-5;
-  background:  linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+    @include gradient;
     &__container{
         @extend .container;
+    }
+    &__row{
+        @extend .row,.justify-content-between;
+    }
+    img{
+        // @extend .w-100;
+
+    }
+    &__box{
+        @extend .position-relative;
+    }
+    &__image{
+
+    }
+    &__btn{
+        @extend .rounded-circle, .position-absolute, .bg-primary;
+        width: 4rem;
+        height: 4rem;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    &__icon{
+        @extend .bg-transparent;
     }
 }
