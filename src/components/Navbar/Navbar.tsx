@@ -1,10 +1,11 @@
 import './Navbar.scss'
 import { Icon } from "@iconify/react";
+import Logo from "@/assets/images/logo.png";
 const Navbar = () => {
-    return <nav className="navbar navbar-expand-lg menu">
+    return <nav className="menu">
     <div className="container">
       <a className="navbar-brand" href="#">
-        <img className='rounded' src="https://themewagon.github.io/patrix/images/logo.png" title='logo' alt="logo" />
+        <img className='rounded' src={Logo} title='logo' alt="logo" />
       </a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>

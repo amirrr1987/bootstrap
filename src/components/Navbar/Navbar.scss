@@ -1,8 +1,9 @@
-@use '../../assets/style/custom' as *;
-@use '../../assets/style/components/mixins' as *;
-@use '../../assets/style/components/buttons' as *;
+@use '@/assets/style/custom' as *;
+@use '@/assets/style/components/mixins' as *;
+@use '@/assets/style/components/buttons' as *;
 .menu{
     @include gradiant;
+    @extend .navbar, .navbar-expand-lg;
     li{
         @extend .px-2;
         

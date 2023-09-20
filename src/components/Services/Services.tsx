@@ -1,5 +1,7 @@
 import { Icon } from "@iconify/react";
-
+import service1 from '@/assets/images/services/service-1.png'
+import service2 from '@/assets/images/services/service-2.png'
+import service3 from '@/assets/images/services/service-3.png'
 const Services = () => {
   return (
     <section id="services">
@@ -32,8 +34,9 @@ const Services = () => {
             <div className="col-12 col-md-4">
               <img
                 className="w-100"
-                src="https://themewagon.github.io/patrix/images/services/service-1.png"
-                alt=""
+                src={service1}
+                title="service1"
+                alt="service1"
               />
             </div>
           </div>
@@ -45,8 +48,9 @@ const Services = () => {
             <div className="col-12 col-md-4">
               <img
                 className="w-100"
-                src="https://themewagon.github.io/patrix/images/services/service-2.png"
-                alt=""
+                src={service2}
+                title="service2"
+                alt="service2"
               />
             </div>
             <div className="col-12 col-md-6">
@@ -105,8 +109,9 @@ const Services = () => {
             <div className="col-12 col-md-4">
               <img
                 className="w-100"
-                src="https://themewagon.github.io/patrix/images/services/service-3.png"
-                alt=""
+                src={service3}
+                title="service3"
+                alt="service3"
               />
             </div>
           </div>

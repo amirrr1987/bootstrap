@@ -1,0 +1,8 @@
+@use '@/assets/style/custom' as * ;
+.intro{
+    @extend .py-5;
+  background:  linear-gradient(to right, rgba(153, 38, 240, 0.95), rgba(209, 34, 227, 0.95));
+    &__container{
+        @extend .container;
+    }
+}
